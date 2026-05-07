@@ -4,10 +4,17 @@ export function AboutSection() {
   return (
     <Section id="about" label="about" index="01">
       <div className="max-w-3xl">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight mb-8">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight mb-4">
+          The Wired Conscience
+        </h1>
+        <p className="text-lg md:text-xl text-foreground/80 mb-16">
+          I build the kind of systems I now have questions about.
+        </p>
+        
+        <h2 className="text-2xl md:text-3xl font-medium leading-tight tracking-tight mb-8">
           {/* Name goes here */}
           <span className="text-muted-foreground">[Your Name]</span>
-        </h1>
+        </h2>
         
         <div className="space-y-6 text-lg md:text-xl leading-relaxed text-foreground/90">
           <p className="text-muted-foreground">
