@@ -37,7 +37,7 @@ export function ToolSection() {
           {/* Input area */}
           <div>
             <label className="block font-mono text-xs text-accent mb-3 tracking-wider">
-              // describe your AI use case
+              Describe your AI use Case
             </label>
             <textarea
               value={input}
@@ -61,7 +61,7 @@ export function ToolSection() {
           {/* Output area */}
           <div className="pt-6 border-t border-border/60">
             <label className="block font-mono text-xs text-accent mb-3 tracking-wider">
-              // conscience check output
+              The Conscience Check Result
             </label>
             <div className="w-full min-h-48 bg-background border border-border rounded-md p-4">
               {output ? (
@@ -77,14 +77,10 @@ export function ToolSection() {
       </div>
       
       {/* Tool context */}
-      <div className="mt-8 max-w-2xl">
-        <span className="block font-mono text-xs text-accent mb-2 tracking-wider">
-          // note
-        </span>
-        <p className="text-xs text-muted-foreground/60 leading-relaxed">
-          Built with the Anthropic API. This tool reflects how I think about AI deployment risk, not a comprehensive compliance framework. Use it as a starting point, not a final answer.
-        </p>
-      </div>
+      <p className="mt-8 max-w-2xl text-xs text-muted-foreground/60 leading-relaxed">
+        <span className="font-mono text-accent tracking-wider">Note:</span>{' '}
+        Built with the Anthropic API. This tool reflects how I think about AI deployment risk, not a comprehensive compliance framework. Use it as a starting point, not a final answer.
+      </p>
     </Section>
   )
 }
