@@ -13,7 +13,7 @@ export function AboutSection() {
         
         <div className="space-y-6 text-lg md:text-xl leading-relaxed text-foreground/90">
           <p className="text-muted-foreground">
-            My name is Mega. I&apos;m a Product Manager based in Jakarta, with seven years of experience building internal systems, workflow architecture, and AI-assisted tools in production environments.
+            Hello! I&apos;m Mega. A Senior Product Manager based in Jakarta, with seven years of experience building internal systems, workflow architecture, and AI-assisted tools in production environments.
           </p>
           
           <p className="text-muted-foreground">
