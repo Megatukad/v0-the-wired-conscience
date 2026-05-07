@@ -37,13 +37,13 @@ export function ToolSection() {
           {/* Input area */}
           <div>
             <label className="block font-mono text-xs text-accent mb-3 tracking-wider">
-              Describe your AI use Case
+              Describe your AI use case
             </label>
             <textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="e.g. We want to use AI to automatically respond to customer complaints without human review..."
-              className="w-full h-32 bg-background border border-border rounded-md p-4 text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-accent/50 transition-colors resize-none"
+              className="w-full h-32 bg-background border border-border rounded-md p-4 text-foreground placeholder:text-muted-foreground/50 placeholder:italic focus:outline-none focus:border-accent/50 transition-colors resize-none"
             />
           </div>
           
@@ -61,7 +61,7 @@ export function ToolSection() {
           {/* Output area */}
           <div className="pt-6 border-t border-border/60">
             <label className="block font-mono text-xs text-accent mb-3 tracking-wider">
-              The Conscience Check Result
+              The Conscience Check result
             </label>
             <div className="w-full min-h-48 bg-background border border-border rounded-md p-4">
               {output ? (
