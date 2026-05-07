@@ -75,7 +75,7 @@ export function WorkSection() {
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Where it started. QA trained me to ask where things break before they do—to look for the edge cases, the hidden dependencies, the assumptions baked into a system that nobody wrote down. I didn&apos;t know it at the time, but that&apos;s also how I now think about AI.
+              Where it started. QA trained me to ask where things break before they do to look for the edge cases, the hidden dependencies, the assumptions baked into a system that nobody wrote down. I didn&apos;t know it at the time, but that&apos;s also how I now think about AI.
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <span className="font-mono text-xs px-2 py-1 bg-secondary text-muted-foreground">
