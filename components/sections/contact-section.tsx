@@ -1,4 +1,5 @@
 import { Section } from '@/components/section'
+import { Mail, Linkedin, Github, MapPin } from 'lucide-react'
 
 export function ContactSection() {
   return (
@@ -8,64 +9,46 @@ export function ContactSection() {
           Get in Touch
         </h2>
         <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-          [Brief statement about what you&apos;re open to — collaborations, speaking, research partnerships, coffee chats about AI ethics, etc.]
+          If you are working on responsible AI, AI governance, or thinking through similar transitions from practice to research, I am genuinely interested in the conversation.
         </p>
         
         {/* Contact methods */}
-        <div className="space-y-6">
-          <div className="flex items-baseline gap-6">
-            <span className="font-mono text-xs text-muted-foreground uppercase tracking-wider w-20 shrink-0">
-              Email
-            </span>
+        <div className="space-y-5">
+          <div className="flex items-center gap-4">
+            <Mail className="w-4 h-4 text-muted-foreground shrink-0" />
             <a 
-              href="mailto:you@example.com" 
+              href="mailto:meg.setiawati@gmail.com" 
               className="text-foreground hover:text-accent transition-colors"
             >
-              [your@email.com]
+              meg.setiawati@gmail.com
             </a>
           </div>
           
-          <div className="flex items-baseline gap-6">
-            <span className="font-mono text-xs text-muted-foreground uppercase tracking-wider w-20 shrink-0">
-              LinkedIn
-            </span>
+          <div className="flex items-center gap-4">
+            <Linkedin className="w-4 h-4 text-muted-foreground shrink-0" />
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/mega-setiawati-95749ab0/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-foreground hover:text-accent transition-colors"
             >
-              [/in/yourprofile]
+              Mega Setiawati on LinkedIn
             </a>
           </div>
           
-          <div className="flex items-baseline gap-6">
-            <span className="font-mono text-xs text-muted-foreground uppercase tracking-wider w-20 shrink-0">
-              Twitter
+          <div className="flex items-center gap-4">
+            <Github className="w-4 h-4 text-muted-foreground shrink-0" />
+            <span className="text-muted-foreground/60">
+              Work in progress.
             </span>
-            <a 
-              href="#" 
-              className="text-foreground hover:text-accent transition-colors"
-            >
-              [@yourhandle]
-            </a>
-          </div>
-          
-          <div className="flex items-baseline gap-6">
-            <span className="font-mono text-xs text-muted-foreground uppercase tracking-wider w-20 shrink-0">
-              GitHub
-            </span>
-            <a 
-              href="#" 
-              className="text-foreground hover:text-accent transition-colors"
-            >
-              [github.com/you]
-            </a>
           </div>
         </div>
         
-        {/* Optional: Location or timezone */}
-        <div className="mt-16 pt-8 border-t border-border">
+        {/* Location and timezone */}
+        <div className="mt-16 pt-8 border-t border-border flex items-center gap-2">
+          <MapPin className="w-4 h-4 text-muted-foreground" />
           <span className="font-mono text-xs text-muted-foreground">
-            Based in [Location] · [Timezone]
+            Jakarta, Indonesia · GMT +7
           </span>
         </div>
       </div>
