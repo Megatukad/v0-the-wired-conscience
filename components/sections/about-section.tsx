@@ -7,9 +7,6 @@ export function AboutSection() {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium leading-tight tracking-tight mb-4">
           The Wired Conscience
         </h1>
-        <p className="text-lg md:text-xl text-foreground/80 mb-12">
-          I build the kind of systems I now have questions about.
-        </p>
         
         <div className="space-y-6 text-lg md:text-xl leading-relaxed text-foreground/90">
           <p className="text-muted-foreground">
