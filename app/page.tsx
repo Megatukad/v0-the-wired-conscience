@@ -26,7 +26,7 @@ export default function Home() {
               © {new Date().getFullYear()} · Built with intention
             </span>
             <span className="font-mono text-xs text-muted-foreground">
-              [PM → AI Ethics]
+              [ wired → conscious ]
             </span>
           </div>
         </div>
