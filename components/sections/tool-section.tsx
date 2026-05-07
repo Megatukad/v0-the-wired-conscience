@@ -7,17 +7,36 @@ export function ToolSection() {
   const [input, setInput] = useState('')
   const [output, setOutput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+  const [isError, setIsError] = useState(false)
 
   const handleSubmit = async () => {
     if (!input.trim()) return
-    
+
     setIsLoading(true)
-    // Placeholder for API integration
-    // In production, this would call the Anthropic API
-    setTimeout(() => {
-      setOutput('API integration pending. This is where the conscience check analysis will appear.')
+    setIsError(false)
+    setOutput('')
+
+    try {
+      const response = await fetch('/api/conscience-check', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ useCase: input }),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        setIsError(true)
+        setOutput(data.error || 'Something went wrong. Please try again.')
+      } else {
+        setOutput(data.result)
+      }
+    } catch {
+      setIsError(true)
+      setOutput('Something went wrong. Please try again.')
+    } finally {
       setIsLoading(false)
-    }, 1000)
+    }
   }
 
   return (
@@ -54,7 +73,7 @@ export function ToolSection() {
               disabled={isLoading || !input.trim()}
               className="font-mono text-sm px-6 py-3 bg-accent text-background hover:bg-accent/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {isLoading ? 'Running...' : 'Run the check'}
+              {isLoading ? 'Running the check...' : 'Run the check'}
             </button>
           </div>
           
@@ -65,7 +84,9 @@ export function ToolSection() {
             </label>
             <div className="w-full min-h-48 bg-background border border-border rounded-md p-4">
               {output ? (
-                <p className="text-foreground/90 leading-relaxed">{output}</p>
+                <div className={`leading-relaxed whitespace-pre-wrap ${isError ? 'text-destructive' : 'text-foreground/90'}`}>
+                  {output}
+                </div>
               ) : (
                 <p className="text-muted-foreground/40 leading-relaxed italic">
                   This is where the analysis will appear. The tool will identify coverage gaps, escalation needs, bias surface areas, and questions your team should answer before deploying.
@@ -79,7 +100,7 @@ export function ToolSection() {
       {/* Tool context */}
       <p className="mt-8 max-w-2xl text-xs text-muted-foreground/60 leading-relaxed">
         <span className="font-mono text-accent tracking-wider">Note:</span>{' '}
-        Built with the Anthropic API. This tool reflects how I think about AI deployment risk, not a comprehensive compliance framework. Use it as a starting point, not a final answer.
+        Built with the Google Gemini API. This tool reflects how I think about AI deployment risk, not a comprehensive compliance framework. Use it as a starting point, not a final answer.
       </p>
     </Section>
   )
