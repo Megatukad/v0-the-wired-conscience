@@ -67,7 +67,7 @@ export function ToolSection() {
               {output ? (
                 <p className="text-foreground/90 leading-relaxed">{output}</p>
               ) : (
-                <p className="text-muted-foreground/60 leading-relaxed">
+                <p className="text-muted-foreground/40 leading-relaxed italic">
                   This is where the analysis will appear. The tool will identify coverage gaps, escalation needs, bias surface areas, and questions your team should answer before deploying.
                 </p>
               )}
@@ -77,9 +77,14 @@ export function ToolSection() {
       </div>
       
       {/* Tool context */}
-      <p className="mt-8 text-sm text-muted-foreground/70 leading-relaxed max-w-2xl">
-        Built with the Anthropic API. This tool reflects how I think about AI deployment risk, not a comprehensive compliance framework. Use it as a starting point, not a final answer.
-      </p>
+      <div className="mt-8 max-w-2xl">
+        <span className="block font-mono text-xs text-accent mb-2 tracking-wider">
+          // note
+        </span>
+        <p className="text-xs text-muted-foreground/60 leading-relaxed">
+          Built with the Anthropic API. This tool reflects how I think about AI deployment risk, not a comprehensive compliance framework. Use it as a starting point, not a final answer.
+        </p>
+      </div>
     </Section>
   )
 }
