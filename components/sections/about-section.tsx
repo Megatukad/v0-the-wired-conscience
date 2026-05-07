@@ -17,7 +17,7 @@ export function AboutSection() {
           </p>
           
           <p className="text-muted-foreground">
-            I started in QA, where you learn to ask where things break before they do. I moved into product because I wanted to make decisions, not just observe them. Seven years later, I&apos;ve built the kind of AI systems I now have questions about: who they serve, what gets optimised, and what gets ignored. I&apos;m preparing for postgraduate study to understand how AI reshapes human authority and accountability, particularly through the lens of ethics and governance, because those questions feel urgent in contexts where AI is being deployed faster than the structures meant to guide it.
+            I started my jouney in tech-world as a QA, where you learn to ask where things break before they do. I moved into product because I wanted to make decisions, not just observe them. Seven years later, I&apos;ve built the kind of AI systems I now have questions about: who they serve, what gets optimised, and what gets ignored. I&apos;m preparing for postgraduate study to understand how AI reshapes human authority and accountability, particularly through the lens of ethics and governance, because those questions feel urgent in contexts where AI is being deployed faster than the structures meant to guide it.
           </p>
         </div>
         
