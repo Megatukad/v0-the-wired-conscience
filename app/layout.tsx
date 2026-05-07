@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'AI Ethics & Responsible AI Research',
+  title: 'The Wired Conscience | AI Ethics & Responsible AI Research',
   description: 'Senior Product Manager transitioning into AI ethics and responsible AI research. Building at the intersection of product thinking and AI governance.',
   generator: 'v0.app',
   icons: {

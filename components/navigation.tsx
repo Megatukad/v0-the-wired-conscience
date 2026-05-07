@@ -50,7 +50,7 @@ export function Navigation() {
             href="#" 
             className="font-mono text-xs tracking-wider text-muted-foreground hover:text-accent transition-colors"
           >
-            [PM → AI Ethics]
+            The Wired Conscience
           </a>
           
           <ul className="flex items-center gap-6 md:gap-10">
