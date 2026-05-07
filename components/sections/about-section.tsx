@@ -13,13 +13,11 @@ export function AboutSection() {
         
         <div className="space-y-6 text-lg md:text-xl leading-relaxed text-foreground/90">
           <p className="text-muted-foreground">
-            {/* Bio paragraph 1 - include "I'm Mega Setiawati" naturally in the text */}
-            [I&apos;m Mega Setiawati... Bio content will go here. A few sentences about your background, what you&apos;re working on, and what drives your interest in AI ethics.]
+            My name is Mega. I&apos;m a Product Manager based in Jakarta, with seven years of experience building internal systems, workflow architecture, and AI-assisted tools in production environments.
           </p>
           
           <p className="text-muted-foreground">
-            {/* Bio paragraph 2 */}
-            [Second paragraph about your transition from PM to AI ethics research, the questions you&apos;re exploring, and your perspective on responsible AI.]
+            I started in QA, where you learn to ask where things break before they do. I moved into product because I wanted to make decisions, not just observe them. Seven years later, I&apos;ve built the kind of AI systems I now have questions about: who they serve, what gets optimised, and what gets ignored. I&apos;m preparing for postgraduate study to understand how AI reshapes human authority and accountability, particularly through the lens of ethics and governance, because those questions feel urgent in contexts where AI is being deployed faster than the structures meant to guide it.
           </p>
         </div>
         
@@ -28,7 +26,7 @@ export function AboutSection() {
             Current Focus
           </span>
           <p className="text-muted-foreground">
-            [What you&apos;re currently researching, building, or writing about]
+            Exploring AI ethics as a research direction. Building this site. Starting to write about questions I don&apos;t have clean answers to yet.
           </p>
         </div>
       </div>
