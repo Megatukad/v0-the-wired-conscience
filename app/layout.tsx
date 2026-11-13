@@ -1,55 +1,30 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { hand, mono, serif } from './fonts'
 import './globals.css'
 
-const inter = Inter({ 
-  subsets: ["latin"],
-  variable: "--font-inter",
-})
-
-const jetbrainsMono = JetBrains_Mono({ 
-  subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
-})
-
 export const metadata: Metadata = {
-  title: 'The Wired Conscience | AI Ethics & Responsible AI Research',
-  description: 'Senior Product Manager transitioning into AI ethics and responsible AI research. Building at the intersection of product thinking and AI governance.',
-  generator: 'v0.app',
+  metadataBase: new URL('https://thewiredconscience.com'),
+  title: 'Mega Setiawati · Product Manager',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: [{ url: '/favicon/favicon.ico' }, { url: '/favicon/icon-32.png', sizes: '32x32' }],
+    apple: '/favicon/apple-touch-icon.png',
   },
+  manifest: '/favicon/site.webmanifest',
 }
 
 export const viewport: Viewport = {
-  themeColor: '#1a1a1a',
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#F3EEE6',
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} bg-background`}>
-      <body className="font-sans antialiased">
+    <html lang="en" className={`${serif.variable} ${mono.variable} ${hand.variable}`}>
+      <body>
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        <Analytics />
       </body>
     </html>
   )
