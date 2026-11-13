@@ -915,4 +915,38 @@
       margin: 10px 0 0 !important;
     }
   }
+
+  /* ---------- 44px touch targets ----------
+     Small standalone links keep their look; an invisible pseudo-element
+     extends the hit area to at least 44px. */
+  a[aria-label^='Meg.s'] {
+    min-height: 44px;
+    justify-content: center;
+  }
+  .rk,
+  .nfc,
+  #learning a,
+  .case a[href='/work']:not(.rl) {
+    position: relative;
+  }
+  .rk::after,
+  .nfc::after {
+    content: '';
+    position: absolute;
+    left: -8px;
+    right: -8px;
+    top: 50%;
+    height: 44px;
+    transform: translateY(-50%);
+  }
+  #learning a::after {
+    content: '';
+    position: absolute;
+    inset: -13px 0;
+  }
+  .case a[href='/work']:not(.rl)::after {
+    content: '';
+    position: absolute;
+    inset: 0 -7px;
+  }
 }
