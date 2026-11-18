@@ -632,9 +632,13 @@
   .si:focus-visible img {
     transform: translateY(-5px) rotate(-8deg);
   }
+  /* Mobile: label is visually hidden but still names the link for screen readers. */
   .si .tip {
-    display: none;
     position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
     left: 50%;
     top: 100%;
     translate: -50% 0;
@@ -653,7 +657,10 @@
       height: 56px;
     }
     .si .tip {
-      display: block;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip-path: none;
     }
   }
   .si:hover .tip,
