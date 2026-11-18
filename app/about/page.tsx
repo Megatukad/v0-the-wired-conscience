@@ -6,7 +6,7 @@ import { ContactBlock } from '@/components/shell/contact'
 import { PencilFilter } from '@/components/shell/pencil-filter'
 import { Reveal, LogoRow } from '@/components/dc/effects'
 
-export const metadata: Metadata = { title: "About · Mega Setiawati" }
+export const metadata: Metadata = { title: "About · Mega Setiawati", alternates: { canonical: "/about" } }
 
 export default function Page() {
   return (

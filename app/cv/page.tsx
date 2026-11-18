@@ -6,7 +6,7 @@ import { ContactBlock } from '@/components/shell/contact'
 import { PencilFilter } from '@/components/shell/pencil-filter'
 import { Reveal, FlipButton } from '@/components/dc/effects'
 
-export const metadata: Metadata = { title: "CV · Mega Setiawati" }
+export const metadata: Metadata = { title: "CV · Mega Setiawati", alternates: { canonical: "/cv" } }
 
 export default function Page() {
   return (

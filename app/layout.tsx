@@ -6,6 +6,8 @@ import './globals.css'
 export const metadata: Metadata = {
   metadataBase: new URL('https://thewiredconscience.com'),
   title: 'Mega Setiawati · Product Manager',
+  description:
+    'Product manager open to remote roles and projects. Selected work in AI workflow design, system integration and product operations.',
   icons: {
     icon: [{ url: '/favicon/favicon.ico' }, { url: '/favicon/icon-32.png', sizes: '32x32' }],
     apple: '/favicon/apple-touch-icon.png',

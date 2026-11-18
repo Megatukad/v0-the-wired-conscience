@@ -7,7 +7,7 @@ import { ContactBlock } from '@/components/shell/contact'
 import { PencilFilter } from '@/components/shell/pencil-filter'
 import { Reveal, CaseIcons, ToTop } from '@/components/dc/effects'
 
-export const metadata: Metadata = { title: "NetSuite Integration · Mega Setiawati" }
+export const metadata: Metadata = { title: "NetSuite Integration · Mega Setiawati", alternates: { canonical: "/work/ns-integration" } }
 
 export default function Page() {
   return (
