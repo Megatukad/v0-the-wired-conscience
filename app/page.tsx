@@ -6,6 +6,8 @@ import { ContactBlock } from '@/components/shell/contact'
 import { PencilFilter } from '@/components/shell/pencil-filter'
 import { Reveal, FlipButton, TypedText } from '@/components/dc/effects'
 
+export const metadata = { alternates: { canonical: '/' } }
+
 export default function Page() {
   return (
     <DcProvider>

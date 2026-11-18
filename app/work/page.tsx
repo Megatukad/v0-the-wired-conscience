@@ -6,7 +6,7 @@ import { ContactBlock } from '@/components/shell/contact'
 import { PencilFilter } from '@/components/shell/pencil-filter'
 import { Reveal } from '@/components/dc/effects'
 
-export const metadata: Metadata = { title: "Work · Mega Setiawati" }
+export const metadata: Metadata = { title: "Work · Mega Setiawati", alternates: { canonical: "/work" } }
 
 export default function Page() {
   return (
